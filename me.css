@@ -1,0 +1,233 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* logout */
+#me_logout {
+
+}
+.ui-btn.me_logout {
+
+}
+/* addclub */
+#me_addclub {
+
+}
+.ui-btn.me_addclub {
+
+}
+/* mobilecontainer */
+.ui-content.me_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* username */
+.me_username {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 10px 0px 6px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* usernamelabel */
+.me_usernamelabel {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 18px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* password */
+.me_password {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 10px 0px 6px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* passwordlabel */
+.me_passwordlabel {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 18px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* clubs */
+.me_clubs {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 4px 0px 8px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_37 */
+.me_mobilegrid_37 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.me_mobilegrid_37_wrapper {
+
+}
+.me_mobilegrid_37 > tr > td {
+	vertical-align: top;
+}
+.me_mobilegrid_37_row_0, .me_mobilegrid_37_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_38 */
+.me_mobilegridcell_38 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.me_mobilegridcell_38 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* clubslabel */
+.me_clubslabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.me_mobilefooter {
+	min-height:38px;
+}
+/* mobilenavbar_2 */
+.me_mobilenavbar_2 {
+
+}
+.me_mobilenavbar_2 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .me_mobilenavbar_2 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .me_mobilenavbar_2 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.me_mobilenavbar_2 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* panel_14 */
+.me_panel_14 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.me_panel_14:focus {
+	outline: 0;
+}
+/* clubnameinput */
+.me_clubnameinput {
+	margin: 10px 0px 4px 0px;
+}
+/* searchbutton */
+#me_searchbutton {
+
+}
+.ui-btn.me_searchbutton {
+	margin: 4px 30px 4px 75px;
+}
+/* mobilegrid_18 */
+.me_mobilegrid_18 {
+	height: auto;
+	width:100%;
+	margin: 15px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.me_mobilegrid_18_wrapper {
+	display: none;
+}
+.me_mobilegrid_18 > tr > td {
+	vertical-align: top;
+}
+.me_mobilegrid_18_row_0, .me_mobilegrid_18_row_0 > td {
+	height: 35px
+}
+/* mobilegridcell_19 */
+.me_mobilegridcell_19 {
+	height:35px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+	background-color: #aae1f2;
+}
+.me_mobilegridcell_19 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* clubname */
+.me_clubname {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Gisha; font-size: 14px;
+	margin: 4px 4px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_24 */
+.me_mobilegridcell_24 {
+	height:35px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+	background-color: #a9def5;
+}
+.me_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* administrator */
+.me_administrator {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Gisha; font-size: 14px;
+	margin: 4px 0px 4px 4px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_26 */
+.me_mobilegridcell_26 {
+	height:35px !important;
+	width:15%;
+	padding: 2px 2px 2px 2px;
+	background-color: #f5baba;
+}
+.me_mobilegridcell_26 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* add */
+#me_add {
+
+}
+.ui-btn.me_add {
+	margin: 2px 0px 2px 0px;
+}
+/* notfound */
+.me_notfound {
+	text-decoration: none; font-weight: normal; font-style: italic; color: #ff0000; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* alert */
+.me_alert {
+
+}
+div.me_alert {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.me_alert .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+    background-color: white;
+}
+/* mobilelabel_31 */
+.me_mobilelabel_31 {
+	text-decoration: none; font-weight: bold; color: #ff0000; text-align: center; font-family: Helvetica; font-size: 20px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+

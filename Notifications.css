@@ -1,0 +1,90 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* logout */
+#Notifications_logout {
+
+}
+.ui-btn.Notifications_logout {
+
+}
+/* showclubsbutton */
+#Notifications_showclubsbutton {
+
+}
+.ui-btn.Notifications_showclubsbutton {
+
+}
+/* mobilecontainer */
+.ui-content.Notifications_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* update */
+#Notifications_update {
+	display: none;
+}
+.ui-btn.Notifications_update {
+	margin: 0px 70px 15px 70px;
+}
+/* mobilefooter */
+.Notifications_mobilefooter {
+	min-height:38px;
+}
+/* mobilenavbar_6 */
+.Notifications_mobilenavbar_6 {
+
+}
+.Notifications_mobilenavbar_6 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .Notifications_mobilenavbar_6 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .Notifications_mobilenavbar_6 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.Notifications_mobilenavbar_6 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* panel_7 */
+.Notifications_panel_7 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.Notifications_panel_7:focus {
+	outline: 0;
+}
+/* clubslist */
+.ui-page .Notifications_clubslist {
+	margin: 15px 0px 0px 0px;
+}
+/* ClubListItem */
+.ui-listview li.Notifications_ClubListItem {
+	display: none;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.Notifications_ClubListItem {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.Notifications_ClubListItem .ui-li-static-container {
+	padding: 0px 0px 4px 0px;
+	padding-right: 41px;
+	padding-left: 0px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.Notifications_ClubListItem.ui-icon-none .ui-li-static-container {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelistitembutton_17 */
+.Notifications_mobilelistitembutton_17 {
+
+}
+/* ClubName */
+.Notifications_ClubName {
+	text-decoration: none; font-weight: bold; color: #56b3db; text-align: center; font-family: Helvetica; font-size: 18px;
+	margin: 10px 5px 4px 5px;
+	word-wrap: break-word;
+	white-space: normal;
+}

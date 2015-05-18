@@ -1,0 +1,405 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* userTabs */
+.GitHub_Git_userTabs {
+
+}
+.GitHub_Git_userTabs .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .GitHub_Git_userTabs ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .GitHub_Git_userTabs ul li:last-child a {
+	margin-right: -1px !important;
+}
+.GitHub_Git_userTabs ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilebutton_64 */
+#GitHub_Git_mobilebutton_64 {
+
+}
+.ui-btn.GitHub_Git_mobilebutton_64 {
+
+}
+/* mobilecontainer1 */
+.ui-content.GitHub_Git_mobilecontainer1 {
+	padding: 0px 0px 0px 0px;
+}
+/* myRepoResGrid */
+.GitHub_Git_myRepoResGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 12px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Git_myRepoResGrid_wrapper {
+	display: none;
+}
+.GitHub_Git_myRepoResGrid > tr > td {
+	vertical-align: top;
+}
+.GitHub_Git_myRepoResGrid_row_0, .GitHub_Git_myRepoResGrid_row_0 > td {
+	height: 2px
+}
+/* mobilegridcell_8 */
+.GitHub_Git_mobilegridcell_8 {
+	height:2px !important;
+	width:35px;
+	padding: 5px 0px 0px 5px;
+}
+.GitHub_Git_mobilegridcell_8 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_63 */
+.GitHub_Git_mobilelabel1_63 {
+	font-weight: normal; text-align: left;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* repoUserLogin */
+.GitHub_Git_repoUserLogin {
+	font-weight: normal; font-style: italic; text-align: left; font-size: 6px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_9 */
+.GitHub_Git_mobilegridcell_9 {
+	height:2px !important;
+	width:auto;
+	padding: 5px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myRepoName */
+.GitHub_Git_myRepoName {
+	font-weight: bold; color: #000000; text-align: left; font-size: 14px;
+	margin: 0px 5px 0px 5px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* myRepoDescr */
+.GitHub_Git_myRepoDescr {
+	font-weight: normal; font-style: italic; color: #555555; text-align: left; font-size: 12px;
+	margin: 0px 5px 0px 5px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* myRepoRes */
+.GitHub_Git_myRepoRes {
+	height: auto;
+	width:100%;
+	margin: 0px 5px 0px 5px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Git_myRepoRes_wrapper {
+
+}
+.GitHub_Git_myRepoRes > tr > td {
+	vertical-align: top;
+}
+.GitHub_Git_myRepoRes_row_0, .GitHub_Git_myRepoRes_row_0 > td {
+	height: 10px
+}
+/* mobilegridcell_26 */
+.GitHub_Git_mobilegridcell_26 {
+	height:10px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_26 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myRepoLang */
+.GitHub_Git_myRepoLang {
+	font-weight: bold; color: #777777; text-align: left; font-size: 10px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_27 */
+.GitHub_Git_mobilegridcell_27 {
+	height:10px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_27 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myRepoWatchers */
+.GitHub_Git_myRepoWatchers {
+	font-weight: bold; color: #777777; text-align: right; font-size: 10px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_30 */
+.GitHub_Git_mobilegridcell_30 {
+	height:10px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_30 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myRepoForks */
+.GitHub_Git_myRepoForks {
+	font-weight: bold; color: #777777; text-align: right; font-size: 10px;
+	margin: 0px 10px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* myGistsGrid */
+.GitHub_Git_myGistsGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 5px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Git_myGistsGrid_wrapper {
+	display: none;
+}
+.GitHub_Git_myGistsGrid > tr > td {
+	vertical-align: top;
+}
+.GitHub_Git_myGistsGrid_row_0, .GitHub_Git_myGistsGrid_row_0 > td {
+	height: 20px
+}
+/* mobilegridcell_36 */
+.GitHub_Git_mobilegridcell_36 {
+	height:20px !important;
+	width:35px;
+	padding: 5px 0px 0px 5px;
+}
+.GitHub_Git_mobilegridcell_36 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myGistAva */
+.GitHub_Git_myGistAva {
+	margin: 0px 0px 0px 0px;
+	width: 30px; height: 30px;
+	display: block;
+}
+/* myGistId */
+.GitHub_Git_myGistId {
+	font-weight: normal; font-style: italic; text-align: left; font-size: 6px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_37 */
+.GitHub_Git_mobilegridcell_37 {
+	height:20px !important;
+	width:auto;
+	padding: 5px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_37 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myGistName */
+.GitHub_Git_myGistName {
+	font-weight: bold; color: #000000; text-align: left; font-size: 14px;
+	margin: 0px 5px 0px 5px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* myGistsAddInfoGrid */
+.GitHub_Git_myGistsAddInfoGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 5px 0px 5px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Git_myGistsAddInfoGrid_wrapper {
+
+}
+.GitHub_Git_myGistsAddInfoGrid > tr > td {
+	vertical-align: top;
+}
+.GitHub_Git_myGistsAddInfoGrid_row_0, .GitHub_Git_myGistsAddInfoGrid_row_0 > td {
+	height: 3px
+}
+/* mobilegridcell_61 */
+.GitHub_Git_mobilegridcell_61 {
+	height:3px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_61 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myGistsLogin */
+.GitHub_Git_myGistsLogin {
+	font-weight: normal; font-style: italic; color: #555555; text-align: left; font-size: 10px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_62 */
+.GitHub_Git_mobilegridcell_62 {
+	height:3px !important;
+	width:auto;
+	padding: 0px 2px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_62 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myGistComments */
+.GitHub_Git_myGistComments {
+	font-weight: normal; font-style: italic; color: #555555; text-align: right; font-size: 10px;
+	margin: 0px 10px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* myGistsFilesGrid */
+.GitHub_Git_myGistsFilesGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 5px 0px 5px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Git_myGistsFilesGrid_wrapper {
+
+}
+.GitHub_Git_myGistsFilesGrid > tr > td {
+	vertical-align: top;
+}
+.GitHub_Git_myGistsFilesGrid_row_0, .GitHub_Git_myGistsFilesGrid_row_0 > td {
+	height: 10px
+}
+/* mobilegridcell_45 */
+.GitHub_Git_mobilegridcell_45 {
+	height:10px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_45 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myGistFile */
+.GitHub_Git_myGistFile {
+	font-weight: bold; color: #777777; text-align: left; font-size: 10px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_46 */
+.GitHub_Git_mobilegridcell_46 {
+	height:10px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_46 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* myGistLang */
+.GitHub_Git_myGistLang {
+	font-weight: bold; color: #777777; text-align: right; font-size: 10px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_49 */
+.GitHub_Git_mobilegridcell_49 {
+	height:10px !important;
+	width:auto;
+	padding: 0px 2px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_49 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* fileSize */
+.GitHub_Git_fileSize {
+	font-weight: bold; color: #777777; text-align: right; font-size: 10px;
+	margin: 0px 10px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* myFollowGrid */
+.GitHub_Git_myFollowGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 5px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Git_myFollowGrid_wrapper {
+	display: none;
+}
+.GitHub_Git_myFollowGrid > tr > td {
+	vertical-align: top;
+}
+.GitHub_Git_myFollowGrid_row_0, .GitHub_Git_myFollowGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_54 */
+.GitHub_Git_mobilegridcell_54 {
+	height:30px !important;
+	width:40px;
+	padding: 5px 0px 0px 5px;
+}
+.GitHub_Git_mobilegridcell_54 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* followersAva */
+.GitHub_Git_followersAva {
+	margin: 0px 0px 0px 0px;
+	width: 35px; height: 35px;
+	display: block;
+}
+/* mobilegridcell_55 */
+.GitHub_Git_mobilegridcell_55 {
+	height:30px !important;
+	width:auto;
+	padding: 5px 0px 0px 0px;
+}
+.GitHub_Git_mobilegridcell_55 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* followersLogin */
+.GitHub_Git_followersLogin {
+	font-weight: bold; color: #333333; text-align: left; font-size: 16px;
+	margin: 8px 5px 0px 5px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* messageLabel */
+.GitHub_Git_messageLabel {
+	font-weight: normal; font-size: 14px;
+	margin: 10px 10px 10px 10px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter1 */
+.GitHub_Git_mobilefooter1 {
+	min-height:38px;
+}

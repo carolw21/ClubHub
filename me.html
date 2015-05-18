@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            me
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/twitter-bootstrap1426375368934/twitter-bootstrap1426375368934.css"
+        rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_style.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_HLJS.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_font.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Facebook_Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_HLJS.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_helpers.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                        $(document).bind("mobileinit", function()
+                {
+                    $.mobile.page.prototype.options.degradeInputs.date = true;
+                });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="me" id="me" class="type-interior"
+        data-theme="e">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader" id="me_mobileheader" class="me_mobileheader">
+                <h1 dsid="mobileheader">
+                    Me
+                </h1>
+                <!-- logout --><!--
+                --><a data-role="button" name="logout" dsid="logout" class="me_logout ui-btn-right"
+                id="me_logout" data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-inline='true' data-mini='true' data-theme="e" tabindex="1">
+                Logout
+                </a><!--
+                --><!-- addclub --><!--
+                --><a data-role="button" name="addclub" dsid="addclub" class="me_addclub ui-btn-left"
+                id="me_addclub" data-corners="false" data-icon="plus" data-iconpos="left" x-apple-data-detectors="false"
+                data-inline='true' data-mini='true' data-theme="e" tabindex="3">
+                Add Club
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="me_mobilecontainer" name="mobilecontainer" class="me_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="e">
+                <link href="me.css" rel="stylesheet" type="text/css" />
+                <link href="color.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="me.js">
+                </script>
+                <!-- username -->
+                <div name="username" id="me_username" dsid="username" data-role="appery_label" class="me_username">
+                    Username:
+                </div>
+                <!-- usernamelabel -->
+                <div name="usernamelabel" id="me_usernamelabel" dsid="usernamelabel" data-role="appery_label"
+                Text="sessionStorage.getItem('username')" class="me_usernamelabel">
+                </div>
+                <!-- password -->
+                <div name="password" id="me_password" dsid="password" data-role="appery_label" class="me_password">
+                    Password:
+                </div>
+                <!-- passwordlabel -->
+                <div name="passwordlabel" id="me_passwordlabel" dsid="passwordlabel" data-role="appery_label"
+                class="me_passwordlabel">
+                </div>
+                <!-- clubs -->
+                <div name="clubs" id="me_clubs" dsid="clubs" data-role="appery_label" class="me_clubs">
+                    Clubs:
+                </div>
+                <!-- mobilegrid_37 -->
+                <div class="me_mobilegrid_37_wrapper" data-wrapper-for="mobilegrid_37">
+                    <table id="me_mobilegrid_37" class="me_mobilegrid_37" dsid="mobilegrid_37" name="mobilegrid_37"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="me_mobilegrid_37_row_0">
+                            <!-- mobilegridcell_38 -->
+                            <td id="me_mobilegridcell_38" name="mobilegridcell_38" class="me_mobilegridcell_38"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- clubslabel -->
+                                    <div name="clubslabel" id="me_clubslabel" dsid="clubslabel" data-role="appery_label"
+                                    class="me_clubslabel">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="me_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="me_mobilefooter" data-theme="e">
+                <!-- mobilenavbar_2 -->
+                <div data-role="navbar" id="me_mobilenavbar_2" name="mobilenavbar_2" dsid="mobilenavbar_2"
+                class="me_mobilenavbar_2" data-theme="e" style="position: relative;">
+                    <ul>
+                        <!-- metab -->
+                        <li>
+                            <a data-theme="e" data-icon="user" id="me_metab" dsid="metab" name="metab">
+                            Me
+                            </a>
+                        </li>
+                        <!-- notify -->
+                        <li>
+                            <a data-theme="e" data-icon="comment" id="me_notify" dsid="notify" name="notify">
+                            Notifications
+                            </a>
+                        </li>
+                        <!-- calendar -->
+                        <li>
+                            <a data-theme="e" data-icon="calendar" id="me_calendar" dsid="calendar" name="calendar">
+                            Calendar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- panel_14 -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="overlay"
+            id="me_panel_14" class="me_panel_14" name="panel_14" dsid="panel_14" data-theme="e">
+                <!-- clubnameinput -->
+                <div data-role="fieldcontain" class="me_clubnameinput ">
+                    <input type="text" name="clubnameinput" dsid="clubnameinput" value="" placeholder="Club Name"
+                    id="me_clubnameinput" tabindex="6" multiple data-theme="e" data-mini="false" class="me_clubnameinput"
+                    />
+                </div>
+                <!-- searchbutton --><!--
+                --><a data-role="button" name="searchbutton" dsid="searchbutton" class="me_searchbutton"
+                id="me_searchbutton" data-corners="true" data-icon="search" data-iconpos="left" x-apple-data-detectors="false"
+                data-inline="true" data-mini="true" data-theme="e" tabindex="7">
+                Search
+                </a><!--
+                --><!-- mobilegrid_18 -->
+                <div class="me_mobilegrid_18_wrapper" data-wrapper-for="mobilegrid_18">
+                    <table id="me_mobilegrid_18" class="me_mobilegrid_18" dsid="mobilegrid_18" name="mobilegrid_18"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:15%;" />
+                        <tr class="me_mobilegrid_18_row_0">
+                            <!-- mobilegridcell_19 -->
+                            <td id="me_mobilegridcell_19" name="mobilegridcell_19" class="me_mobilegridcell_19"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- clubname -->
+                                    <div name="clubname" id="me_clubname" dsid="clubname" data-role="appery_label" class="me_clubname">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_24 -->
+                            <td id="me_mobilegridcell_24" name="mobilegridcell_24" class="me_mobilegridcell_24"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- administrator -->
+                                    <div name="administrator" id="me_administrator" dsid="administrator" data-role="appery_label"
+                                    class="me_administrator">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_26 -->
+                            <td id="me_mobilegridcell_26" name="mobilegridcell_26" class="me_mobilegridcell_26"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- add --><!--
+                                    --><a data-role="button" name="add" dsid="add" class="me_add" style='min-height:20px; '
+                                    id="me_add" data-corners="true" data-icon="plus" data-iconpos="notext" x-apple-data-detectors="false"
+                                    data-inline="true" data-mini="true" data-theme="e" tabindex="8">
+                                    Button
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- notfound -->
+                <div name="notfound" id="me_notfound" dsid="notfound" data-role="appery_label" class="me_notfound">
+                    Not Found
+                </div>
+            </div>
+            <!-- alert -->
+            <div data-role="popup" name="alert" dsid="alert" id="me_alert" class="me_alert"
+            data-corners="true" data-dismissible="true" data-overlay-theme="" data-theme="" data-shadow="true"
+            data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- mobilelabel_31 -->
+                    <div name="mobilelabel_31" id="me_mobilelabel_31" dsid="mobilelabel_31" data-role="appery_label"
+                    class="me_mobilelabel_31">
+                        Club Added
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

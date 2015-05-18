@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            GitHub_Gist
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/twitter-bootstrap1426375368934/twitter-bootstrap1426375368934.css"
+        rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_font.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_HLJS.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_style.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_helpers.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_HLJS.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Facebook_Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                        $(document).bind("mobileinit", function()
+                {
+                    $.mobile.page.prototype.options.degradeInputs.date = true;
+                });
+        </script>
+        <div data-role="page" style="min-height:800px;" dsid="GitHub_Gist" id="GitHub_Gist"
+        class="type-interior" data-theme="e">
+            <!-- gistHeader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="e" name="gistHeader" id="GitHub_Gist_gistHeader" class="gistHeader  GitHub_Gist_gistHeader"
+            class="headerIcon">
+                <h1 dsid="gistHeader">
+                    Gist
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="GitHub_Gist_mobilecontainer1" name="mobilecontainer1"
+            class="mobileContent  GitHub_Gist_mobilecontainer1 ui-content" dsid="mobilecontainer1"
+            data-theme="e">
+                <link href="GitHub_Gist.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="GitHub_Gist.js">
+                </script>
+                <!-- gistDescription -->
+                <div name="gistDescription" id="GitHub_Gist_gistDescription" dsid="gistDescription"
+                data-role="appery_label" class="labelClass  GitHub_Gist_gistDescription">
+                </div>
+                <!-- gistPanel -->
+                <div data-role="appery_html" name="gistPanel" dsid="gistPanel" id="GitHub_Gist_gistPanel"
+                class="GitHub_Gist_gistPanel">
+                </div>
+                <!-- gistCommentGrid -->
+                <div class="GitHub_Gist_gistCommentGrid_wrapper" data-wrapper-for="gistCommentGrid">
+                    <table id="GitHub_Gist_gistCommentGrid" class="mobilegrid  GitHub_Gist_gistCommentGrid"
+                    dsid="gistCommentGrid" name="gistCommentGrid" cellpadding=0 cellspacing=0>
+                        <col style="width:40px;" />
+                        <col style="width:auto;" />
+                        <tr class="GitHub_Gist_gistCommentGrid_row_0">
+                            <!-- mobilegridcell_13 -->
+                            <td id="GitHub_Gist_mobilegridcell_13" name="mobilegridcell_13" class="GitHub_Gist_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- gistCommentAva -->
+                                    <img class="mobileImage  GitHub_Gist_gistCommentAva" src="files/resources/image/no-image.jpg"
+                                    id="GitHub_Gist_gistCommentAva" dsid="gistCommentAva" name="gistCommentAva" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_14 -->
+                            <td id="GitHub_Gist_mobilegridcell_14" name="mobilegridcell_14" class="GitHub_Gist_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- commentUserLogin -->
+                                    <div name="commentUserLogin" id="GitHub_Gist_commentUserLogin" dsid="commentUserLogin"
+                                    data-role="appery_label" class="labelClass  GitHub_Gist_commentUserLogin">
+                                        Login
+                                    </div>
+                                    <!-- commentContent -->
+                                    <div name="commentContent" id="GitHub_Gist_commentContent" dsid="commentContent"
+                                    data-role="appery_label" class="labelClass  GitHub_Gist_commentContent">
+                                        Label
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            signIn
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/twitter-bootstrap1426375368934/twitter-bootstrap1426375368934.css"
+        rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_style.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_HLJS.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_font.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Facebook_Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_HLJS.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_helpers.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                        $(document).bind("mobileinit", function()
+                {
+                    $.mobile.page.prototype.options.degradeInputs.date = true;
+                });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="signIn" id="signIn" class="type-interior"
+        data-theme="e">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader" id="signIn_mobileheader" class="signIn_mobileheader">
+                <h1 dsid="mobileheader">
+                    Sign In
+                </h1>
+                <!-- backbutton --><!--
+                --><a data-role="button" name="backbutton" dsid="backbutton" class="signIn_backbutton ui-btn-left"
+                id="signIn_backbutton" data-corners="true" data-icon="back" data-iconpos="left" x-apple-data-detectors="false"
+                data-inline='true' data-mini='true' data-theme="e" tabindex="6">
+                Back
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="signIn_mobilecontainer" name="mobilecontainer" class="signIn_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="e">
+                <link href="signIn.css" rel="stylesheet" type="text/css" />
+                <link href="color.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="signIn.js">
+                </script>
+                <!-- Username -->
+                <div name="Username" id="signIn_Username" dsid="Username" data-role="appery_label"
+                class="signIn_Username">
+                    Username:
+                </div>
+                <!-- usernameInput -->
+                <div data-role="fieldcontain" class="signIn_usernameInput ">
+                    <input type="text" name="usernameInput" dsid="usernameInput" value="" placeholder="Full Name Perhaps?"
+                    id="signIn_usernameInput" tabindex="5" multiple data-theme="e" class="signIn_usernameInput"
+                    />
+                </div>
+                <!-- Password -->
+                <div name="Password" id="signIn_Password" dsid="Password" data-role="appery_label"
+                class="signIn_Password">
+                    Password:
+                </div>
+                <!-- passwordInput -->
+                <div data-role="fieldcontain" class="signIn_passwordInput ">
+                    <input type="password" name="passwordInput" dsid="passwordInput" value="" placeholder=""
+                    id="signIn_passwordInput" tabindex="4" multiple data-theme="e" class="signIn_passwordInput"
+                    />
+                </div>
+                <!-- login --><!--
+                --><a data-role="button" name="login" dsid="login" class="signIn_login" id="signIn_login"
+                data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-mini="false" data-theme="e" tabindex="1">
+                Login
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="signIn_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="signIn_mobilefooter" data-theme="e">
+            </div>
+            <!-- mobilepopup_2 -->
+            <div data-role="popup" name="mobilepopup_2" dsid="mobilepopup_2" id="signIn_mobilepopup_2"
+            class="signIn_mobilepopup_2" data-corners="true" data-dismissible="true" data-overlay-theme=""
+            data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- wrong -->
+                    <div name="wrong" id="signIn_wrong" dsid="wrong" data-role="appery_label" class="signIn_wrong">
+                        Sorry! Wrong username or password.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

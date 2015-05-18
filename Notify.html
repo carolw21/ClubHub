@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Notify
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/twitter-bootstrap1426375368934/twitter-bootstrap1426375368934.css"
+        rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_style.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_HLJS.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_font.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Facebook_Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_HLJS.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_helpers.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                        $(document).bind("mobileinit", function()
+                {
+                    $.mobile.page.prototype.options.degradeInputs.date = true;
+                });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Notify" id="Notify" class="type-interior"
+        data-theme="e">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader" id="Notify_mobileheader" class="Notify_mobileheader">
+                <h1 dsid="mobileheader">
+                    Notify
+                </h1>
+                <!-- logout --><!--
+                --><a data-role="button" name="logout" dsid="logout" class="Notify_logout ui-btn-right"
+                id="Notify_logout" data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-inline='true' data-mini='true' data-theme="e" tabindex="1">
+                Logout
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Notify_mobilecontainer" name="mobilecontainer" class="Notify_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="e">
+                <link href="Notify.css" rel="stylesheet" type="text/css" />
+                <link href="color.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Notify.js">
+                </script>
+                <!-- headerinput -->
+                <div data-role="fieldcontain" class="Notify_headerinput ">
+                    <input type="text" name="headerinput" dsid="headerinput" value="" placeholder="Header"
+                    id="Notify_headerinput" tabindex="10" multiple data-theme="e" class="Notify_headerinput"
+                    />
+                </div>
+                <!-- messageinput -->
+                <div data-role="fieldcontain" class="Notify_messageinput ">
+                    <textarea name="messageinput" id="Notify_messageinput" tabindex="9" dsid="messageinput"
+                    data-theme="e" placeholder="Message" class="Notify_messageinput">
+</textarea>
+                </div>
+                <!-- send --><!--
+                --><a data-role="button" name="send" dsid="send" class="Notify_send" id="Notify_send"
+                data-corners="true" data-icon="navigation" data-iconpos="left" x-apple-data-detectors="false"
+                data-mini="true" data-theme="e" tabindex="11">
+                Send
+                </a>
+                <p data-theme="e" style="margin-top: 20px; margin-bottom: 20px; text-align: center; color: red"><strong>Sent Notifications</strong></p>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Notify_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Notify_mobilefooter" data-theme="e">
+                <!-- mobilenavbar_2 -->
+                <div data-role="navbar" id="Notify_mobilenavbar_2" name="mobilenavbar_2" dsid="mobilenavbar_2"
+                class="Notify_mobilenavbar_2" data-theme="e" style="position: relative;">
+                    <ul>
+                        <!-- club -->
+                        <li>
+                            <a data-theme="e" data-icon="user" id="Notify_club" dsid="club" name="club">
+                            Club
+                            </a>
+                        </li>
+                        <!-- notify -->
+                        <li>
+                            <a data-theme="e" data-icon="comment" id="Notify_notify" dsid="notify" name="notify">
+                            Notify
+                            </a>
+                        </li>
+                        <!-- calendar -->
+                        <li>
+                            <a data-theme="e" data-icon="calendar" id="Notify_calendar" dsid="calendar" name="calendar">
+                            Calendar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilepopup_31 -->
+            <div data-role="popup" name="mobilepopup_31" dsid="mobilepopup_31" id="Notify_mobilepopup_31"
+            class="Notify_mobilepopup_31" data-corners="true" data-dismissible="true" data-overlay-theme=""
+            data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- sent -->
+                    <div name="sent" id="Notify_sent" dsid="sent" data-role="appery_label" class="Notify_sent">
+                        Message Sent!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

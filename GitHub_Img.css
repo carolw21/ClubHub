@@ -1,0 +1,20 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.GitHub_Img_mobilecontainer1 {
+	padding: 15px 15px 15px 15px;
+}
+/* imgFile */
+.GitHub_Img_imgFile {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 100px;
+	display: block;
+	display: none;
+}
+/* mobilefooter */
+.GitHub_Img_mobilefooter {
+	min-height:38px;
+}

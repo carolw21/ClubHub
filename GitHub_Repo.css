@@ -1,0 +1,173 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.GitHub_Repo_mobilecontainer1 {
+	padding: 10px 10px 10px 5px;
+}
+/* repoName */
+.GitHub_Repo_repoName {
+	font-weight: bold; color: #333333; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* upToPrevTree */
+.GitHub_Repo_upToPrevTree {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 0px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Repo_upToPrevTree_wrapper {
+	display: none;
+}
+.GitHub_Repo_upToPrevTree > tr > td {
+	vertical-align: top;
+}
+.GitHub_Repo_upToPrevTree_row_0, .GitHub_Repo_upToPrevTree_row_0 > td {
+	height: 10px
+}
+/* mobilegridcell_27 */
+.GitHub_Repo_mobilegridcell_27 {
+	height:10px !important;
+	width:30px;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Repo_mobilegridcell_27 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_33 */
+.GitHub_Repo_mobilelabel1_33 {
+	font-weight: bold; color: #333333; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_31 */
+.GitHub_Repo_mobilegridcell_31 {
+	height:10px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Repo_mobilegridcell_31 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_34 */
+.GitHub_Repo_mobilelabel1_34 {
+	font-weight: bold; color: #333333; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* repoTreeGrid */
+.GitHub_Repo_repoTreeGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 3px 5px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Repo_repoTreeGrid_wrapper {
+
+}
+.GitHub_Repo_repoTreeGrid > tr > td {
+	vertical-align: top;
+}
+.GitHub_Repo_repoTreeGrid_row_0, .GitHub_Repo_repoTreeGrid_row_0 > td {
+	height: 30px
+}
+.GitHub_Repo_repoTreeGrid_row_1, .GitHub_Repo_repoTreeGrid_row_1 > td {
+	height: 1px
+}
+/* mobilegridcell_20 */
+.GitHub_Repo_mobilegridcell_20 {
+	height:30px !important;
+	width:20px;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Repo_mobilegridcell_20 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* treeType */
+.GitHub_Repo_treeType {
+	font-weight: bold; color: #333333; text-align: left; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_21 */
+.GitHub_Repo_mobilegridcell_21 {
+	height:30px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Repo_mobilegridcell_21 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* pathLabel */
+.GitHub_Repo_pathLabel {
+	font-weight: bold; color: #333333; text-align: left; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_24 */
+.GitHub_Repo_mobilegridcell_24 {
+	height:30px !important;
+	width:30px;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Repo_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_22 */
+.GitHub_Repo_mobilegridcell_22 {
+	height:1px !important;
+	width:20px;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Repo_mobilegridcell_22 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_23 */
+.GitHub_Repo_mobilegridcell_23 {
+	height:1px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Repo_mobilegridcell_23 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* shaLabel */
+.GitHub_Repo_shaLabel {
+	font-weight: normal; font-style: italic; text-align: left; font-size: 6px;
+	margin: 0px 0px 0px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_25 */
+.GitHub_Repo_mobilegridcell_25 {
+	height:1px !important;
+	width:30px;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Repo_mobilegridcell_25 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilefooter */
+.GitHub_Repo_mobilefooter {
+	min-height:38px;
+}

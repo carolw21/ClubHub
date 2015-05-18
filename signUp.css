@@ -1,0 +1,126 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* backbutton */
+#signUp_backbutton {
+
+}
+.ui-btn.signUp_backbutton {
+
+}
+/* mobilecontainer */
+.ui-content.signUp_mobilecontainer {
+	padding: 30px 15px 15px 15px;
+}
+/* Username */
+.signUp_Username {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Gisha; font-size: 20px;
+	margin: 0px 0px 10px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* usernameenter */
+.signUp_usernameenter {
+	margin: 4px 0px 20px 0px;
+}
+/* Password */
+.signUp_Password {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Gisha; font-size: 20px;
+	margin: 0px 0px 10px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* passwordenter */
+.signUp_passwordenter {
+	margin: 4px 0px 20px 0px;
+}
+/* chooseaccount */
+.signUp_chooseaccount {
+	margin: 4px 0px 20px 0px;
+}
+/* administrator */
+.signUp_administrator {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* clubmember */
+.signUp_clubmember {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* signup */
+#signUp_signup {
+
+}
+.ui-btn.signUp_signup {
+	margin: 15px 25px 4px 25px;
+}
+/* mobilefooter */
+.signUp_mobilefooter {
+	min-height:38px;
+}
+/* clubnamepopup */
+.signUp_clubnamepopup {
+
+}
+div.signUp_clubnamepopup {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.signUp_clubnamepopup .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+    background-color: white;
+}
+/* clubname */
+.signUp_clubname {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: center; font-family: Gisha; font-size: 20px;
+	margin: 20px 5px 15px 5px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* clubnameenter */
+.signUp_clubnameenter {
+	margin: 0px 20px 15px 20px;
+}
+/* clubnameset */
+#signUp_clubnameset {
+
+}
+.ui-btn.signUp_clubnameset {
+	margin: 4px 50px 30px 50px;
+}
+/* mobilepopup_3 */
+.signUp_mobilepopup_3 {
+
+}
+div.signUp_mobilepopup_3 {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.signUp_mobilepopup_3 .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+    background-color: white;
+    padding: 8px;
+}
+/* accounterror */
+.signUp_accounterror {
+	text-decoration: none; font-weight: bold; color: #ff0000; text-align: center; font-family: Helvetica; font-size: 20px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+    background-color: white;
+}
+
+.ui-btn.ui-checkbox-off:after, .ui-btn.ui-checkbox-on:after, .ui-btn.ui-radio-off:after, .ui-btn.ui-radio-on:after{
+    margin: -10px 2px 0px -1.51px;
+}

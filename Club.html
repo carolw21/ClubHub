@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Club
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/twitter-bootstrap1426375368934/twitter-bootstrap1426375368934.css"
+        rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_style.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_HLJS.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_font.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Facebook_Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_HLJS.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_helpers.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                        $(document).bind("mobileinit", function()
+                {
+                    $.mobile.page.prototype.options.degradeInputs.date = true;
+                });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Club" id="Club" class="type-interior"
+        data-theme="e">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader" id="Club_mobileheader" class="Club_mobileheader">
+                <h1 dsid="mobileheader">
+                    Club
+                </h1>
+                <!-- logout --><!--
+                --><a data-role="button" name="logout" dsid="logout" class="Club_logout ui-btn-right"
+                id="Club_logout" data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-inline='true' data-mini='true' data-theme="e" tabindex="1">
+                Logout
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Club_mobilecontainer" name="mobilecontainer" class="Club_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="e">
+                <link href="Club.css" rel="stylesheet" type="text/css" />
+                <link href="color.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Club.js">
+                </script>
+                <!-- username -->
+                <div name="username" id="Club_username" dsid="username" data-role="appery_label"
+                class="Club_username">
+                    Username:
+                </div>
+                <!-- usernamelabel -->
+                <div name="usernamelabel" id="Club_usernamelabel" dsid="usernamelabel" data-role="appery_label"
+                class="Club_usernamelabel">
+                </div>
+                <!-- password -->
+                <div name="password" id="Club_password" dsid="password" data-role="appery_label"
+                class="Club_password">
+                    Password:
+                </div>
+                <!-- passwordlabel -->
+                <div name="passwordlabel" id="Club_passwordlabel" dsid="passwordlabel" data-role="appery_label"
+                class="Club_passwordlabel">
+                </div>
+                <!-- password -->
+                <div name="club" id="Club_club" dsid="club" data-role="appery_label"
+                class="Club_club">
+                    Club Name:
+                </div>
+                <!-- passwordlabel -->
+                <div name="clublabel" id="Club_clublabel" dsid="clublabel" data-role="appery_label"
+                class="Club_clublabel">
+                </div>
+                <!-- clubs -->
+                <div name="clubs" id="Club_clubs" dsid="clubs" data-role="appery_label" class="Club_clubs">
+                    Members:
+                </div>
+                <!-- mobilegrid_30 -->
+                <div class="Club_mobilegrid_30_wrapper" data-wrapper-for="mobilegrid_30">
+                    <table id="Club_mobilegrid_30" class="Club_mobilegrid_30" dsid="mobilegrid_30" name="mobilegrid_30"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Club_mobilegrid_30_row_0">
+                            <!-- mobilegridcell_31 -->
+                            <td id="Club_mobilegridcell_31" name="mobilegridcell_31" class="Club_mobilegridcell_31"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- memberslabel -->
+                                    <div name="memberslabel" id="Club_memberslabel" dsid="memberslabel" data-role="appery_label"
+                                    class="Club_memberslabel">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Club_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Club_mobilefooter" data-theme="e">
+                <!-- mobilenavbar_2 -->
+                <div data-role="navbar" id="Club_mobilenavbar_2" name="mobilenavbar_2" dsid="mobilenavbar_2"
+                class="Club_mobilenavbar_2" data-theme="e" style="position: relative;">
+                    <ul>
+                        <!-- metab -->
+                        <li>
+                            <a data-theme="e" data-icon="user" id="Club_metab" dsid="metab" name="metab">
+                            Club
+                            </a>
+                        </li>
+                        <!-- notify -->
+                        <li>
+                            <a data-theme="e" data-icon="comment" id="Club_notify" dsid="notify" name="notify">
+                            Notify
+                            </a>
+                        </li>
+                        <!-- calendar -->
+                        <li>
+                            <a data-theme="e" data-icon="calendar" id="Club_calendar" dsid="calendar" name="calendar">
+                            Calendar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

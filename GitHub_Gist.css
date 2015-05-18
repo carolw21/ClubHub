@@ -1,0 +1,86 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.GitHub_Gist_mobilecontainer1 {
+	padding: 10px 10px 10px 10px;
+}
+/* gistDescription */
+.GitHub_Gist_gistDescription {
+	font-weight: bold; color: #333333; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* gistPanel */
+.GitHub_Gist_gistPanel {
+	margin: 8px 0px 8px 0px;
+	font-weight: normal;
+	width: auto; height: auto;
+}
+div.GitHub_Gist_gistPanel {
+	overflow: auto;
+}
+/* gistCommentGrid */
+.GitHub_Gist_gistCommentGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 15px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.GitHub_Gist_gistCommentGrid_wrapper {
+
+}
+.GitHub_Gist_gistCommentGrid > tr > td {
+	vertical-align: top;
+}
+.GitHub_Gist_gistCommentGrid_row_0, .GitHub_Gist_gistCommentGrid_row_0 > td {
+	height: 10px
+}
+/* mobilegridcell_13 */
+.GitHub_Gist_mobilegridcell_13 {
+	height:10px !important;
+	width:40px;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Gist_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* gistCommentAva */
+.GitHub_Gist_gistCommentAva {
+	margin: 2px 0px 0px 0px;
+	width: 35px; height: 35px;
+	display: block;
+}
+/* mobilegridcell_14 */
+.GitHub_Gist_mobilegridcell_14 {
+	height:10px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.GitHub_Gist_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* commentUserLogin */
+.GitHub_Gist_commentUserLogin {
+	font-weight: bold; color: #333333; text-align: left; font-size: 14px;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* commentContent */
+.GitHub_Gist_commentContent {
+	font-weight: bold; font-style: italic; color: #555555; text-align: left; font-size: 10px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.GitHub_Gist_mobilefooter {
+	min-height:38px;
+}

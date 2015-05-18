@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            GitHub_Git
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/twitter-bootstrap1426375368934/twitter-bootstrap1426375368934.css"
+        rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_font.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_HLJS.css"
+        />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/GitHub_style.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_helpers.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GitHub_HLJS.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Facebook_Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                        $(document).bind("mobileinit", function()
+                {
+                    $.mobile.page.prototype.options.degradeInputs.date = true;
+                });
+        </script>
+        <div data-role="page" style="min-height:800px;" dsid="GitHub_Git" id="GitHub_Git"
+        class="type-interior" data-theme="e">
+            <!-- userHeader -->
+            <div data-role="header" data-position="inline" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="userHeader" id="GitHub_Git_userHeader" class="userHeader  GitHub_Git_userHeader"
+            class="headerIcon">
+                <h1 dsid="userHeader">
+                    &nbsp;
+                </h1>
+                <!-- userTabs -->
+                <div data-role="navbar" id="GitHub_Git_userTabs" name="userTabs" dsid="userTabs"
+                class="navBar  GitHub_Git_userTabs" data-theme="e" style="position: relative;">
+                    <ul>
+                        <!-- myReposTab -->
+                        <li>
+                            <a data-theme="e" class="ui-btn-active ui-state-persist" id="GitHub_Git_myReposTab"
+                            dsid="myReposTab" name="myReposTab">
+                            Repos
+                            </a>
+                        </li>
+                        <!-- myGistsTab -->
+                        <li>
+                            <a data-theme="e" id="GitHub_Git_myGistsTab" dsid="myGistsTab" name="myGistsTab">
+                            Gists
+                            </a>
+                        </li>
+                        <!-- myFollowersTab -->
+                        <li>
+                            <a data-theme="e" id="GitHub_Git_myFollowersTab" dsid="myFollowersTab" name="myFollowersTab">
+                            Followers
+                            </a>
+                        </li>
+                        <!-- myFollowingTab -->
+                        <li>
+                            <a data-theme="e" id="GitHub_Git_myFollowingTab" dsid="myFollowingTab" name="myFollowingTab">
+                            Following
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobilebutton_64 --><!--
+                --><a data-role="button" name="mobilebutton_64" dsid="mobilebutton_64" class="GitHub_Git_mobilebutton_64 ui-btn-left"
+                id="GitHub_Git_mobilebutton_64" data-corners="true" data-icon="arrow-l" data-iconpos="left"
+                x-apple-data-detectors="false" data-inline='true' data-mini='true' data-theme="e"
+                tabindex="2">
+                Back
+                </a>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="GitHub_Git_mobilecontainer1" name="mobilecontainer1"
+            class="mobileContent  GitHub_Git_mobilecontainer1 ui-content" dsid="mobilecontainer1"
+            data-theme="e">
+                <link href="GitHub_Git.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="GitHub_Git.js">
+                </script>
+                <!-- myRepoResGrid -->
+                <div class="GitHub_Git_myRepoResGrid_wrapper" data-wrapper-for="myRepoResGrid">
+                    <table id="GitHub_Git_myRepoResGrid" class="myGrid  GitHub_Git_myRepoResGrid" dsid="myRepoResGrid"
+                    name="myRepoResGrid" cellpadding=0 cellspacing=0>
+                        <col style="width:40px;" />
+                        <col style="width:auto;" />
+                        <tr class="GitHub_Git_myRepoResGrid_row_0">
+                            <!-- mobilegridcell_8 -->
+                            <td id="GitHub_Git_mobilegridcell_8" name="mobilegridcell_8" class="GitHub_Git_mobilegridcell_8"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel1_63 -->
+                                    <div name="mobilelabel1_63" id="GitHub_Git_mobilelabel1_63" dsid="mobilelabel1_63"
+                                    data-role="appery_label" class="large-icon  GitHub_Git_mobilelabel1_63">
+                                        
+                                    </div>
+                                    <!-- repoUserLogin -->
+                                    <div name="repoUserLogin" id="GitHub_Git_repoUserLogin" dsid="repoUserLogin" data-role="appery_label"
+                                    class="labelClass  GitHub_Git_repoUserLogin">
+                                        Label
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_9 -->
+                            <td id="GitHub_Git_mobilegridcell_9" name="mobilegridcell_9" class="GitHub_Git_mobilegridcell_9"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- myRepoName -->
+                                    <div name="myRepoName" id="GitHub_Git_myRepoName" dsid="myRepoName" data-role="appery_label"
+                                    class="labelClass  GitHub_Git_myRepoName">
+                                    </div>
+                                    <!-- myRepoDescr -->
+                                    <div name="myRepoDescr" id="GitHub_Git_myRepoDescr" dsid="myRepoDescr" data-role="appery_label"
+                                    class="labelClass  GitHub_Git_myRepoDescr">
+                                    </div>
+                                    <!-- myRepoRes -->
+                                    <div class="GitHub_Git_myRepoRes_wrapper" data-wrapper-for="myRepoRes">
+                                        <table id="GitHub_Git_myRepoRes" class="mobilegrid  GitHub_Git_myRepoRes" dsid="myRepoRes"
+                                        name="myRepoRes" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="GitHub_Git_myRepoRes_row_0">
+                                                <!-- mobilegridcell_26 -->
+                                                <td id="GitHub_Git_mobilegridcell_26" name="mobilegridcell_26" class="GitHub_Git_mobilegridcell_26"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- myRepoLang -->
+                                                        <div name="myRepoLang" id="GitHub_Git_myRepoLang" dsid="myRepoLang" data-role="appery_label"
+                                                        class="labelClass  GitHub_Git_myRepoLang">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_27 -->
+                                                <td id="GitHub_Git_mobilegridcell_27" name="mobilegridcell_27" class="GitHub_Git_mobilegridcell_27"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- myRepoWatchers -->
+                                                        <div name="myRepoWatchers" id="GitHub_Git_myRepoWatchers" dsid="myRepoWatchers"
+                                                        data-role="appery_label" class="labelClass  GitHub_Git_myRepoWatchers">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_30 -->
+                                                <td id="GitHub_Git_mobilegridcell_30" name="mobilegridcell_30" class="GitHub_Git_mobilegridcell_30"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- myRepoForks -->
+                                                        <div name="myRepoForks" id="GitHub_Git_myRepoForks" dsid="myRepoForks" data-role="appery_label"
+                                                        class="labelClass  GitHub_Git_myRepoForks">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- myGistsGrid -->
+                <div class="GitHub_Git_myGistsGrid_wrapper" data-wrapper-for="myGistsGrid">
+                    <table id="GitHub_Git_myGistsGrid" class="myGrid  GitHub_Git_myGistsGrid" dsid="myGistsGrid"
+                    name="myGistsGrid" cellpadding=0 cellspacing=0>
+                        <col style="width:40px;" />
+                        <col style="width:auto;" />
+                        <tr class="GitHub_Git_myGistsGrid_row_0">
+                            <!-- mobilegridcell_36 -->
+                            <td id="GitHub_Git_mobilegridcell_36" name="mobilegridcell_36" class="GitHub_Git_mobilegridcell_36"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- myGistAva -->
+                                    <img class="mobileImage  GitHub_Git_myGistAva" src="files/resources/image/no-image.jpg"
+                                    id="GitHub_Git_myGistAva" dsid="myGistAva" name="myGistAva" />
+                                    <!-- myGistId -->
+                                    <div name="myGistId" id="GitHub_Git_myGistId" dsid="myGistId" data-role="appery_label"
+                                    class="labelClass  GitHub_Git_myGistId">
+                                        Label
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_37 -->
+                            <td id="GitHub_Git_mobilegridcell_37" name="mobilegridcell_37" class="GitHub_Git_mobilegridcell_37"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- myGistName -->
+                                    <div name="myGistName" id="GitHub_Git_myGistName" dsid="myGistName" data-role="appery_label"
+                                    class="labelClass  GitHub_Git_myGistName">
+                                    </div>
+                                    <!-- myGistsAddInfoGrid -->
+                                    <div class="GitHub_Git_myGistsAddInfoGrid_wrapper" data-wrapper-for="myGistsAddInfoGrid">
+                                        <table id="GitHub_Git_myGistsAddInfoGrid" class="mobilegrid  GitHub_Git_myGistsAddInfoGrid"
+                                        dsid="myGistsAddInfoGrid" name="myGistsAddInfoGrid" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="GitHub_Git_myGistsAddInfoGrid_row_0">
+                                                <!-- mobilegridcell_61 -->
+                                                <td id="GitHub_Git_mobilegridcell_61" name="mobilegridcell_61" class="GitHub_Git_mobilegridcell_61"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- myGistsLogin -->
+                                                        <div name="myGistsLogin" id="GitHub_Git_myGistsLogin" dsid="myGistsLogin" data-role="appery_label"
+                                                        class="labelClass  GitHub_Git_myGistsLogin">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_62 -->
+                                                <td id="GitHub_Git_mobilegridcell_62" name="mobilegridcell_62" class="GitHub_Git_mobilegridcell_62"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- myGistComments -->
+                                                        <div name="myGistComments" id="GitHub_Git_myGistComments" dsid="myGistComments"
+                                                        data-role="appery_label" class="labelClass  GitHub_Git_myGistComments">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- myGistsFilesGrid -->
+                                    <div class="GitHub_Git_myGistsFilesGrid_wrapper" data-wrapper-for="myGistsFilesGrid">
+                                        <table id="GitHub_Git_myGistsFilesGrid" class="mobilegrid  GitHub_Git_myGistsFilesGrid"
+                                        dsid="myGistsFilesGrid" name="myGistsFilesGrid" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="GitHub_Git_myGistsFilesGrid_row_0">
+                                                <!-- mobilegridcell_45 -->
+                                                <td id="GitHub_Git_mobilegridcell_45" name="mobilegridcell_45" class="GitHub_Git_mobilegridcell_45"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- myGistFile -->
+                                                        <div name="myGistFile" id="GitHub_Git_myGistFile" dsid="myGistFile" data-role="appery_label"
+                                                        class="labelClass  GitHub_Git_myGistFile">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_46 -->
+                                                <td id="GitHub_Git_mobilegridcell_46" name="mobilegridcell_46" class="GitHub_Git_mobilegridcell_46"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- myGistLang -->
+                                                        <div name="myGistLang" id="GitHub_Git_myGistLang" dsid="myGistLang" data-role="appery_label"
+                                                        class="labelClass  GitHub_Git_myGistLang">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_49 -->
+                                                <td id="GitHub_Git_mobilegridcell_49" name="mobilegridcell_49" class="GitHub_Git_mobilegridcell_49"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- fileSize -->
+                                                        <div name="fileSize" id="GitHub_Git_fileSize" dsid="fileSize" data-role="appery_label"
+                                                        class="labelClass  GitHub_Git_fileSize">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- myFollowGrid -->
+                <div class="GitHub_Git_myFollowGrid_wrapper" data-wrapper-for="myFollowGrid">
+                    <table id="GitHub_Git_myFollowGrid" class="myGrid  GitHub_Git_myFollowGrid" dsid="myFollowGrid"
+                    name="myFollowGrid" cellpadding=0 cellspacing=0>
+                        <col style="width:45px;" />
+                        <col style="width:auto;" />
+                        <tr class="GitHub_Git_myFollowGrid_row_0">
+                            <!-- mobilegridcell_54 -->
+                            <td id="GitHub_Git_mobilegridcell_54" name="mobilegridcell_54" class="GitHub_Git_mobilegridcell_54"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- followersAva -->
+                                    <img class="mobileImage  GitHub_Git_followersAva" src="files/resources/image/no-image.jpg"
+                                    id="GitHub_Git_followersAva" dsid="followersAva" name="followersAva" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_55 -->
+                            <td id="GitHub_Git_mobilegridcell_55" name="mobilegridcell_55" class="GitHub_Git_mobilegridcell_55"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- followersLogin -->
+                                    <div name="followersLogin" id="GitHub_Git_followersLogin" dsid="followersLogin"
+                                    data-role="appery_label" class="followersLogin  GitHub_Git_followersLogin">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- messageLabel -->
+                <div name="messageLabel" id="GitHub_Git_messageLabel" dsid="messageLabel" data-role="appery_label"
+                class="GitHub_Git_messageLabel">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,120 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* logout */
+#Club_logout {
+
+}
+.ui-btn.Club_logout {
+
+}
+/* mobilecontainer */
+.ui-content.Club_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+
+/* username */
+.Club_username {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 10px 0px 6px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* usernamelabel */
+.Club_usernamelabel {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 18px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* password */
+.Club_password {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 10px 0px 6px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* passwordlabel */
+.Club_passwordlabel {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 18px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* club */
+.Club_club {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 10px 0px 6px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* clublabel */
+.Club_clublabel {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 18px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* clubs */
+.Club_clubs {
+	text-decoration: none; font-weight: bold; color: #08a3d4; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 4px 0px 6px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_30 */
+.Club_mobilegrid_30 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.Club_mobilegrid_30_wrapper {
+
+}
+.Club_mobilegrid_30 > tr > td {
+	vertical-align: top;
+}
+.Club_mobilegrid_30_row_0, .Club_mobilegrid_30_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_31 */
+.Club_mobilegridcell_31 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Club_mobilegridcell_31 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* memberslabel */
+.Club_memberslabel {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.Club_mobilefooter {
+	min-height:38px;
+}
+/* mobilenavbar_2 */
+.Club_mobilenavbar_2 {
+
+}
+.Club_mobilenavbar_2 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .Club_mobilenavbar_2 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .Club_mobilenavbar_2 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.Club_mobilenavbar_2 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
